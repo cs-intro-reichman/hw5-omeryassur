@@ -77,7 +77,6 @@ public class MyString {
             else answer+=letter;
          
         }
-        // answer=answer+str.charAt(str.length()-1);
         return answer;
     }
   
