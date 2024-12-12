@@ -69,12 +69,15 @@ public class MyString {
      */
     public static String spacedString(String str) {
         String answer="";
-        for (int i=0; i<str.length()-1; i++) {
+        for (int i=0; i<str.length(); i++) {
             char letter=str.charAt(i);
-            answer=answer+letter+" ";
+            if (i<str.length()-1) {
+                answer=answer+letter+" ";
+            }
+            else answer+=letter;
+         
         }
-        answer=answer+str.charAt(str.length()-1);
-
+        // answer=answer+str.charAt(str.length()-1);
         return answer;
     }
   
